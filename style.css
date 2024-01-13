@@ -45,4 +45,99 @@ body, html {
   .sidebar a:not(.active):hover {
     background-color: #575757;
   }
+
+  .topbar {
+    width: 100%;
+    height: 50px; /* Adjust the height as needed */
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 80px; /* Same width as your sidebar */
+    z-index: 2;
+  }
   
+  .search-field {
+    height: 30px;
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    outline: none;
+  }
+  
+  .topbar-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar-item img {
+    width: 20px; /* Adjust the size of icons as needed */
+    height: auto;
+    margin-left: 15px; /* Space between icons */
+  }
+  
+  /* Fixing the top padding of the sidebar to avoid overlapping */
+  .sidebar {
+    padding-top: 70px; /* Height of topbar plus some extra space */
+  }
+  
+  /* Rest of the styles remain unchanged */
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the profile to the right */
+  }
+  
+  .user-icon {
+    width: 30px; /* Adjust based on your icon size */
+    height: 30px;
+    border-radius: 50%; /* Makes it round */
+    margin-right: 5px;
+  }
+  
+  .dropdown-arrow {
+    width: 15px; /* Adjust based on your icon size */
+    height: 15px;
+  }
+  
+  .round-button {
+    background-color: #2979ff; /* Adjust color as needed */
+    width: 35px; /* Adjust size as needed */
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; /* Space from the profile */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .round-button img {
+    width: 20px; /* Adjust based on your icon size */
+    height: 20px;
+  }
+  
+  /* Adjustments for mobile or smaller screen sizes may be necessary */
+  @media (max-width: 600px) {
+    .topbar {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .user-profile, .round-button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Rest of the styles remain unchanged */
+  .logo {
+    position: absolute;
+    top: 0%;
+    width: 100px;
+  }
