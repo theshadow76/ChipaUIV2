@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a img {
+    width: 40px; /* Adjust the size of icons as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .sidebar a.settings {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Active class for the gradient */
+  .sidebar a.active {
+    background-image: linear-gradient(to right, #00ffcc, #3333ff);
+  }
+  
+  .sidebar a:not(.active):hover {
+    background-color: #575757;
+  }
+  
