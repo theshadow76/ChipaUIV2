@@ -141,3 +141,20 @@ body, html {
     top: 0%;
     width: 100px;
   }
+  .sidebar a img {
+    width: 40px; /* Adjust the size of icons as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: invert(100%); /* Invert color to white */
+  }
+  
+  .topbar-item img {
+    width: 20px; /* Adjust the size of icons as needed */
+    height: auto;
+    margin-left: 15px; /* Space between icons */
+    filter: invert(100%); /* Invert color to white */
+  }
+  
+  /* Rest of your CSS remains unchanged */
+  
